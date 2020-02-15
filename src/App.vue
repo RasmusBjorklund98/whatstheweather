@@ -34,6 +34,6 @@ body {
 
 main {
   min-height: 100vh;
-  padding: 25px;
+  padding: 30px;
 }
 </style>
