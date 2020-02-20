@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <main>
+      <!-- <h1>WHAT'S <br> THE <br> WEATHER?</h1> -->
     <Search/>
     </main>
   </div>
@@ -25,15 +26,25 @@ export default {
 }
 
 body {
-  font-family: "montserrat", sans-serif;
+  font-family: "Futura", serif;
 }
 
 #app {
-  background-color: blueviolet;
+  background-color: #32328E;
+  /*  */
 }
 
 main {
   min-height: 100vh;
-  padding: 30px;
+  padding: 25px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: white;
+}
+
+h5 {
+  color: white; 
 }
 </style>
