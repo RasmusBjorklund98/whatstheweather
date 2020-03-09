@@ -9,7 +9,9 @@
     </div>
     <div class="search-box">
       <input type="text" class="search-bar" placeholder="Search..." v-model="query" />
-      <button type="submit" class="search-button" v-on:click="fetchWeather"><i class="fas fa-search-location"></i></button>
+      <button type="submit" class="search-button" v-on:click="fetchWeather">
+        <i class="fas fa-search-location"></i>
+      </button>
     </div>
 
     <div class="weather-wrap" v-if="typeof weather.main != 'undefined'">
@@ -95,16 +97,15 @@ export default {
 </script>
 
 <style scoped>
-
 .fa-search-location {
-  font-size: 2rem; 
+  font-size: 2rem;
 }
 
 .icon {
-  padding-top: 2rem; 
-  flex-grow: 1; 
+  padding-top: 2rem;
+  flex-grow: 1;
   font-size: 3rem;
-  color: #F68D8D; 
+  color: #f68d8d;
 }
 
 .top-box {
@@ -116,10 +117,10 @@ export default {
 .bottom-box {
   display: flex;
   justify-content: center;
-  bottom: 0; 
+  bottom: 0;
   height: 30vh;
   text-align: center;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 .search-box {
@@ -134,18 +135,18 @@ export default {
   display: flex;
   width: 100%;
   padding: 1rem;
-  height: 4.5rem; 
+  height: 4.5rem;
 
   color: #313131;
   font-size: 1rem;
-  font-family: 'Futura', serif; 
+  font-family: "Futura", serif;
 
   appearance: none;
   border: none;
   outline: none;
   background: none;
 
-  background-color: white; 
+  background-color: white;
   border-radius: 1rem 0 0 1rem;
   transition: 0.4s;
 }
@@ -153,12 +154,12 @@ export default {
 .search-button {
   display: flex;
   padding: 1rem;
-  height: 4.5rem; 
+  height: 4.5rem;
 
-  background-color: #F68D8D;
+  background-color: #f68d8d;
   color: white;
-  border: 2px solid #F68D8D; 
-  border-radius: 0 1rem 1rem 0; 
+  border: 2px solid #f68d8d;
+  border-radius: 0 1rem 1rem 0;
 }
 
 .search-box .search-bar:focus {
